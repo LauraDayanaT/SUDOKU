@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.control.Button?>
+
 
 
 <BorderPane xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sudoku.GameController">
@@ -27,4 +30,14 @@
           </rowConstraints>
       </GridPane>
    </center>
+
+    <bottom>
+        <HBox spacing="10" alignment="center" BorderPane.alignment="CENTER">
+            <Button fx:id="btnResolver" text="Resolver" />
+            <Button fx:id="btnReiniciar" text="Reiniciar" />
+            <Button fx:id="btnExit" text="Salir" />
+        </HBox>
+    </bottom>
+
+
 </BorderPane>

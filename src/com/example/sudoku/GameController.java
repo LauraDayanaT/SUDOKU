@@ -1,6 +1,7 @@
 package com.example.sudoku;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 
@@ -9,6 +10,17 @@ public class GameController {
 
     @FXML
     private GridPane gridPane;
+
+    @FXML
+    private Button btnResolver;
+
+    @FXML
+    private Button btnReiniciar;
+
+    @FXML
+    private Button btnExit;
+
+
 
     private static final int SIZE = 6;
 
@@ -24,7 +36,21 @@ public class GameController {
     @FXML
     public void initialize() {
         createBoard();
+
+        btnResolver.setOnAction(e -> {
+            System.out.println("Nuevo Juego");
+        });
+
+        btnReiniciar.setOnAction(e -> {
+            System.out.println("Juego Reiniciado");
+        });
+
+        btnExit.setOnAction(e -> {
+            System.out.println("Salir");
+            System.exit(0);
+        });
     }
+
 
     private void createBoard() {
         gridPane.getChildren().clear();
