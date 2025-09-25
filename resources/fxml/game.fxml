@@ -8,7 +8,7 @@
 
 <BorderPane xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sudoku.GameController">
    <center>
-      <GridPane fx:id="gridPane" BorderPane.alignment="CENTER" gridLinesVisible="true" hgap="0" vgap="0">
+      <GridPane fx:id="gridPane" BorderPane.alignment="CENTER" gridLinesVisible="true" hgap="0" vgap="0" maxWidth="480" maxHeight="480">
           <columnConstraints>
               <ColumnConstraints percentWidth="16.6" />
               <ColumnConstraints percentWidth="16.6" />
