@@ -9,14 +9,16 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/fxml/game.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 600);
 
-        // Vincular el CSS
-        scene.getStylesheets().add(Main.class.getResource("style.css").toExternalForm());
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/fxml/game.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 640, 700);
+
+
+        scene.getStylesheets().add(Main.class.getResource("/style.css").toExternalForm());
 
         stage.setTitle("Sudoku 6x6");
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 
